@@ -17,6 +17,10 @@ UPDATE empleados SET salario = 9500000 WHERE nombre = 'Ana Gómez';
 
 DELETE FROM empleados WHERE nombre = 'Luis Castro';
 
+-------------	Insertar un nuevo empleado con un cargo existente: se quiere agregar a 'Marta López' con el cargo de 'Asistente' y un salario de 3,000,000-------------
+
+
+INSERT INTO empleados (nombre, cargo, salario) VALUES ('Marta López', 'Asistente', 3000000);
 
 
 -------------	Seleccionar empleados con el cargo 'Desarrollador'-------------
