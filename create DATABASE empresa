@@ -14,3 +14,10 @@ CREATE TABLE cargo (
     nombre_cargo VARCHAR(50) NOT NULL,
     salario DECIMAL(10, 2)
 );
+
+-------------------------------------- insert registro empleados -----------------------------
+
+USE empresa;
+INSERT INTO empleados (nombre, cargo, salario) VALUES ('Paola Velasco', 'Gerente', 7500000);
+INSERT INTO empleados (nombre, cargo, salario) VALUES ('Ana Gómez', 'Desarrollador', 6000000);
+INSERT INTO empleados (nombre, cargo, salario) VALUES ('Luis Castro', 'Proyectos', 10000000);
