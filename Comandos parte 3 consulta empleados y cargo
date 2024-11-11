@@ -5,3 +5,8 @@ SELECT * FROM cargo;
 -------------	Seleccionar empleados que ganan más de 7,000,000:------------------------
 
 SELECT * FROM empleados WHERE salario > 7000000;
+
+
+-------------	Actualizar el salario de un empleado (por ejemplo, de 'Ana Gómez'): se quiere aumentar el salario de 'Ana Gómez' a 6,500,000-------------
+
+UPDATE empleados SET salario = 9500000 WHERE nombre = 'Ana Gómez';
