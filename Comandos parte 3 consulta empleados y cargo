@@ -16,3 +16,10 @@ UPDATE empleados SET salario = 9500000 WHERE nombre = 'Ana Gómez';
 
 
 DELETE FROM empleados WHERE nombre = 'Luis Castro';
+
+
+
+-------------	Seleccionar empleados con el cargo 'Desarrollador'-------------
+
+
+SELECT * FROM empleados WHERE cargo = 'Desarrollador';
