@@ -1,1 +1,16 @@
 create DATABASE empresa;
+
+-------------------------------------- Creacion tablas -----------------------------
+CREATE TABLE empleados (
+    Id_empl INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    cargo VARCHAR(50),
+    salario DECIMAL(10, 2)
+);
+
+USE empresa;
+CREATE TABLE cargo (
+    id_cargo INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_cargo VARCHAR(50) NOT NULL,
+    salario DECIMAL(10, 2)
+);
