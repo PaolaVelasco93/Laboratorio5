@@ -1,0 +1,38 @@
+------------------------Actualizar la disponibilidad de un libro (marcarlo como no disponible después de un préstamo) --------------------
+
+
+
+UPDATE Libros
+SET Disponible = FALSE
+WHERE ID_Libro = 1;
+
+
+------------------------ Actualizar la fecha de devolución de un préstamo.
+UPDATE Prestamos
+SET Fecha_Devolucion = '2024-08-20'
+WHERE ID_Prestamo = 1;
+
+
+------------------------ Eliminar un libro de la base de datos
+
+DELETE FROM Libros
+WHERE Titulo = 'EL libro de 1984';
+
+
+
+------------------------ Seleccionar todos los libros
+SELECT * FROM libros;
+
+
+------------------------ Seleccionar todos los autores
+SELECT * FROM autores;
+
+
+
+------------------------Mostrar los libros devueltos en el mes 8 de la tabla prestamos del año 2024, puedes filtrar por el mes en la columna Fecha_Devolucion.
+
+SELECT * FROM Prestamos
+WHERE MONTH(Fecha_Devolucion) = 8 AND YEAR(Fecha_Devolucion) = 2024;
+
+
+
